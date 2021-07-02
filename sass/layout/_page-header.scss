@@ -1,0 +1,120 @@
+.header {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--border-button-color);
+    height: 80px;
+  }
+.page-header {
+    display: flex;
+    height: 80px;
+  }
+.page-header_logo{
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  
+  }
+.page-header_nav {
+    display: flex;
+    align-items: center;
+  }
+.logo_web{
+    color: var(--accent-kolor);
+  }
+.page-header_logo_studio {
+    color: var(--titel-text-color);
+  }
+  .page-header_site-nav{
+    padding-top: 32px;
+   
+    margin-right: 250px;
+  }
+  .site-nav_list {
+    margin-right: 50px;
+  }
+  
+.site-nav_link {
+    text-decoration: none;
+    color: var(--titel-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus,
+    &:hover,
+    &:active{
+      color: var(--accent-kolor);  
+    }
+}
+.site-nav_link--active {
+  color: var(--accent-kolor);
+  &::after{
+    display: block;
+  content: "";
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-kolor);
+  margin-top: 28px;  
+  }
+} 
+.site-nav_list--portfolio_active {
+  color: var(--accent-kolor);
+  &::after{
+     display: block;
+  content: "";
+  width: 78px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-kolor);
+  margin-top: 28px; 
+  }
+}
+.contacts {
+    display: flex;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+  }
+  .contacts_list {
+    margin-right: 30px;
+  }
+  .contacts_li--margin {
+    margin-right: 0px;
+  }
+.page-header_contacts {
+    padding-left: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+.smart-use {
+    width: 10px;
+    height: 16px;
+  }
+.contacts_link {
+    display: flex;
+    align-items: center;
+    color: var(--primary-text-color);
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus,
+    &:active{
+         color: var(--accent-kolor);
+         fill: var(--accent-kolor);
+    }
+  } 
+.contacts_icon{
+  fill: var(--primary-text-color);
+  margin-right: 10px; 
+  .contacts_link:hover &,
+  .contacts_link:focus &,
+  .contacts_link:active & {
+   color: var(--accent-kolor);
+  fill: var(--accent-kolor); 
+} 
+} 
+  

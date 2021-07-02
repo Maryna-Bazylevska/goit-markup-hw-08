@@ -1,0 +1,37 @@
+.buttons-list {
+    display: flex;
+    padding-top: 94px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.first {
+  width: 128px;
+}
+.second {
+  width: 145px;
+}
+.third {
+  width: 103px;
+}
+.fourth {
+  width: 130px;
+  margin-right: 0px;
+}
+.buttons-list_item{
+  margin-right: 8px;
+  text-align: center;
+}
+.buttons-list_button {
+  height: 38px;
+  background-color: var(--button-color);
+  color: var(--titel-text-color);
+}
+.buttons-list_button--active {
+  border: none;
+  background-color: var(--accent-kolor);
+  color: var(--secondary-color);
+  margin-right: 8px;
+  width: 73px;
+}
+ 
+

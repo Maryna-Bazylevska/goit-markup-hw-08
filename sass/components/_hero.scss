@@ -1,0 +1,59 @@
+.hero {
+  text-align: center;
+  height: 600px;
+  background-color: var(--background-clients);
+ 
+  background-repeat: no-repeat;
+  background-position: center;
+  &_title{
+  margin-top: 0;
+  color: var(--secondary-color);
+  padding-top: 200px;
+  margin-bottom: 30px;
+  }
+}
+
+ 
+@media (min-width: 489px){
+  .hero{
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ),
+  url(/img/background/headertab.jpg);
+  } 
+  @media (min-resolution: 2dppx) {
+    .hero{
+      background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/img/background/headertab@2x.jpg);
+    }
+}
+}
+@media (min-width: 796px){
+  .hero{
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ),
+  url(/img/background/header.jpg);
+  } 
+  @media (min-resolution: 2dppx) {
+    .hero{
+      background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/img/background/header@2x.jpg);
+    }
+}
+}
+
+.hero_button{
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-kolor);
+  color: var(--secondary-color);
+}
