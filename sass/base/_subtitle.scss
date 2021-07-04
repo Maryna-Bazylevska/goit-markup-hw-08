@@ -2,10 +2,16 @@
     font-family: var(--main-font);
     font-style: normal;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 1.166;
+    font-size: 28px;
+    line-height: 1.178;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
-    padding-top: 94px;
+    margin-bottom: 30px;
     text-align: center;
+    padding-top: 60px;
+    @media screen and (min-width: 1200px){
+    padding-top: 94px;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.166;  
+    }
 }
