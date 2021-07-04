@@ -1,5 +1,6 @@
-@media screen and (max-width: 479.99px) {
+
   .hero {
+    margin: 0 auto;
     text-align: center;
     background-position: center;
     height: 400px;
@@ -30,7 +31,7 @@
         url(../img/background/headertel@2x.jpg);
     }
   }
-}
+
 @media screen and (min-width: 480px) {
   .hero {
     margin: 0 auto;
