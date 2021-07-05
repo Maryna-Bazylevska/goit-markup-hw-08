@@ -19,6 +19,67 @@
   <body class="body">
     <!-- header -->
     <header class="header">
+      <div class="container mobile-header">
+        <a href="./index.html" class="logo page-header_logo">
+          <span class="logo_web page-header_logo_web">Web</span>
+          <span class="logo-studio page-header_logo_studio">Studio</span>
+        </a>
+        <button class="open-button" data-menu-open >
+          <svg class="open-button_burger" width="24" hight="16">
+            <use href="./img/icons/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-nav is-hidden" data-menu>
+        <div class="container">
+          <button type="button" class="close-button" data-menu-close>
+            <svg class="open-button_burger" width="19" hight="19">
+              <use href="./img/icons/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="mobile-menu list">
+              <li class="mobile-menu__item">
+                <a href="index.html" class=" mobile-menu__link link ">Студия</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="portfolio.html" class="mobile-menu__link-active mobile-menu__link link">Портфолио</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#footer" class="mobile-menu__link link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-nav__bottom">
+            <ul class="mobile-contacts list">
+              <li class="mobile-contacts__item">
+                <a href="" class="mobile-contacts__link link mobile-contacts__link-tel"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-contacts__item ">
+                <a href="" class="mobile-contacts__link link "
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-media list">
+              <li class="mobile-media__item">
+                <a href="" class="mobile-media__link link">Instagram</a>
+              </li>
+              <li class="mobile-media__item">
+                <a href="" class="mobile-media__link link">Twitter</a>
+              </li>
+              <li class="mobile-media__item">
+                <a href="" class="mobile-media__link link">Facebook</a>
+              </li>
+              <li class="mobile-media__item">
+                <a href="" class="mobile-media__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div class="container page-header">
         <nav class="page-header_nav">
           <a href="./index.html" class="logo page-header_logo">
@@ -50,7 +111,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="contacts_list--margin">
+          <li class="contacts_list">
             <a class="contacts_link " href="tel:+380961111111">
               <svg
                 class="contacts_icon  "
@@ -324,5 +385,6 @@
         </div>
       </section>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

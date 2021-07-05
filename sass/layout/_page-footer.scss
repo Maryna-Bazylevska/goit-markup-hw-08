@@ -1,35 +1,40 @@
 .footer {
   background-color: #2f303a;
-  justify-content: space-around;
+  
 }
 .footer_container {
  text-align: center;
- height: 603px;
+ padding-top: 60px;
+ padding-bottom: 60px;
+ 
  @media screen and (min-width: 768px){
- display: flex;
- height: auto;
- flex-wrap: wrap;
- justify-content: space-around;
+  display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+
 
  }
  @media screen and (min-width: 1200px){
- 
+  display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    text-align: unset;
  }
 }
 .footer_logo-studio {
   color: var(--secondary-color);
 }
 .footer_contacts {
-  width: 100%;
-  padding-top: 60px;
-  @media screen and (min-width: 768px){
-    height: 187px;
-    
-  }
+  margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+  
   
   @media screen and (min-width: 1200px){
     margin-right: 70px;
-    padding-bottom: 0;
+    margin-left: 0;
+    margin-bottom: 0;
   }
   
 }
@@ -65,7 +70,7 @@
   &.contacts-footer_link:hover,
   &.contacts-footer_link:focus,
   &.contacts-footer_link:active{
-    color: var(--accent-kolor);
+    color: var(--accent-color);
     }
 }
 .contacts-footer_item{
@@ -75,19 +80,15 @@
   }
 }
 .footer-social-link{
-margin: 60px auto;
-@media screen and (min-width: 768px){
-padding-top: 65px;
-margin-bottom: 0;
-height: 140px;
-margin-top: 0;
-width: 100%;
-}
+  width: 206px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+
 @media screen and (min-width: 1200px){
-  padding-top: 72px;
-  padding-bottom: 100px;
-  margin-bottom: 0;
-  margin-right: 93px;
+  margin-right: auto;
+    margin-left: 0;
+    margin-bottom: 0;
 }
 }
 .footer_pre-subtitle,
@@ -99,25 +100,20 @@ width: 100%;
   background-color: var(--background-footer-button);
 }
 .subscribe {
-  margin-top: 60px;
-  padding-bottom: 60px;
+  margin-left: auto;
+    margin-right: auto;
 
-  @media screen and (min-width: 768px){
-    padding-bottom: 60px;
-   
-    
-  }
   @media screen and (min-width: 1200px){
-    padding-bottom: 94px;
-   
-    margin-top: 0;
+    width: 570px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .subscribe_button{
   margin-top: 20px;
   width: 200px;
   height: 50px; 
-  background-color: var(--accent-kolor); 
+  background-color: var(--accent-color); 
   color: var(--secondary-color);
   @media screen and (min-width: 1200px){
     margin-top: 0;
@@ -126,10 +122,17 @@ width: 100%;
 .subscribe_form {
   flex-direction:column;
   width: 100%;
+  @media screen and (min-width: 1200px){
+    display: flex;
+    flex-direction: row;
+  }
 }
 .subscribe_label {
   display: flex;
   flex-direction: column;
+  @media screen and (min-width: 1200px){
+    margin-right: 12px;
+  }
 }
 .subscribe_input{
 font-family: Roboto;
@@ -152,18 +155,8 @@ border-radius: 4px;
 width: 450px;
 height: 50px;
 }
+@media screen and (min-width: 1200px){
+width: 358px;
+height: 50px;
 }
-@media screen and (min-width: 768px){
-  .footer-wrapper{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 60px;
-    width: 100%;
-  }
-  }
-  @media screen and (min-width: 768px){
-    .footer-wrapper{
-      margin-bottom: 0;
-      display: flex;
-  }
-  }
+}

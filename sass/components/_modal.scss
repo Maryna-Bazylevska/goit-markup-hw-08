@@ -34,7 +34,7 @@
 }
 .modal:hover,
 .modal:focus {
-    border-color: var(--accent-kolor);
+    border-color: var(--accent-color);
 }
 .modal_button {
     position: absolute;
@@ -49,7 +49,7 @@
 }
 .modal_button:hover,
 .modal_button:focus {
-    fill: var(--accent-kolor);
+    fill: var(--accent-color);
 }
 .form {
     display: block;
@@ -103,7 +103,7 @@
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form_input:focus {
-    border-color: var(--accent-kolor);
+    border-color: var(--accent-color);
     outline: none;
 }
 .form_input:focus + .form_label,
@@ -111,7 +111,7 @@
     transform: translate(-60%, -40px);
 }
 .form_input:focus ~ .form_icon {
-    fill: var(--accent-kolor);
+    fill: var(--accent-color);
 }
 .form_icon {
     position: absolute;
@@ -155,7 +155,7 @@
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .textarea:focus {
-    border-color: var(--accent-kolor);
+    border-color: var(--accent-color);
 }
 .form-textarea_name {
     font-family: Roboto;
@@ -194,12 +194,12 @@
     margin-right: 0;
 }
 .form-checkbox_input:focus + .form-checkbox_label .form-checkbox_icon {
-    background-color: var(--accent-kolor);
-    border: 1px solid var(--accent-kolor);
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
 .form-checkbox_agreement-conditions{
     text-decoration: underline;
-    color:var(--accent-kolor)
+    color:var(--accent-color)
 }
 .form-checkbox_text,
 .form-checkbox_agreement-conditions{
@@ -211,6 +211,6 @@
     margin-left: 163px;
     width: 200px;
     height: 50px;
-    background-color: var(--accent-kolor);
+    background-color: var(--accent-color);
     color: var(--secondary-color);
 }

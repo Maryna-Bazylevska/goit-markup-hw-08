@@ -1,8 +1,21 @@
 .buttons-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  margin-right: 0;
+  margin-bottom: 0;
+  @media screen and (min-width: 768px){
     display: flex;
-    padding-top: 94px;
-    margin-bottom: 50px;
+    padding-top: 60px;
+    margin-bottom: 36px;
     justify-content: center;
+    border-top: 1px solid #ECECEC;
+}
+@media screen and (min-width: 768px){
+  padding-top: 94px;
+    margin-bottom: 50px;
+}
 }
 .first {
   width: 128px;
@@ -19,7 +32,12 @@
 }
 .buttons-list_item{
   margin-right: 8px;
-  text-align: center;
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px){
+  display: flex;
+  justify-content: space-around;
+ 
+}
 }
 .buttons-list_button {
   height: 38px;
@@ -28,7 +46,7 @@
 }
 .buttons-list_button--active {
   border: none;
-  background-color: var(--accent-kolor);
+  background-color: var(--accent-color);
   color: var(--secondary-color);
   margin-right: 8px;
   width: 73px;
