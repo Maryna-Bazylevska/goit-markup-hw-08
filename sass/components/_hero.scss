@@ -1,37 +1,37 @@
-
+.hero {
+  margin: 0 auto;
+  text-align: center;
+  background-position: center;
+  height: 400px;
+  max-width: 480px;
+  border-top: 1px solid #ececec;
+  background-color: var(--background-clients);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/background/headertel.jpg);
+  background-repeat: no-repeat;
+  &_title {
+    padding-top: 118px;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 1.615;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .hero {
-    margin: 0 auto;
-    text-align: center;
-    background-position: center;
-    height: 400px;
-    width: 100%;
-    border-top: 1px solid #ececec;
-    background-color: var(--background-clients);
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../img/background/headertel.jpg);
-    &_title {
-      padding-top: 118px;
-      color: var(--secondary-color);
-      margin-bottom: 30px;
-      font-size: 26px;
-      line-height: 1.615;
-    }
+      url(../img/background/headertel@2x.jpg);
   }
-  @media screen and (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .hero {
-      background-image: linear-gradient(
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../img/background/headertel@2x.jpg);
-    }
-  }
+}
 
 @media screen and (min-width: 768px) {
   .hero {

@@ -56,7 +56,8 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 100%;
+  min-width: 320px;
+  max-width: 1200px;
 }
 
 @media screen and (min-width: 480px) {
@@ -592,11 +593,12 @@ img {
   text-align: center;
   background-position: center;
   height: 400px;
-  width: 100%;
+  max-width: 480px;
   border-top: 1px solid #ececec;
   background-color: var(--background-clients);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/background/headertel.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background/headertel.jpg);
+  background-repeat: no-repeat;
 }
 
 .hero_title {
@@ -918,7 +920,7 @@ img {
 
 .clients_link:hover .clients_icon,
 .clients_link:focus .clients_icon {
-  fill: var(--accent-kolor);
+  fill: var(--accent-color);
 }
 
 .clients_item {
@@ -1248,20 +1250,15 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (min-width: 768px) {
-  .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%) scale(1);
-            transform: translate(-50%, -50%) scale(1);
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1567,7 +1564,7 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border-top: 1px solid #ECECEC;
+    border-top: 1px solid #ececec;
   }
 }
 
@@ -1654,7 +1651,7 @@ img {
 
 .projects_item {
   margin-bottom: 30px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   width: 100%;
   -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
@@ -1745,10 +1742,5 @@ img {
   position: relative;
   overflow: hidden;
   width: 100%;
-}
-
-body {
-  width: 100%;
-  max-width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

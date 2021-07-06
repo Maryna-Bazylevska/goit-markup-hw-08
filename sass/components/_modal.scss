@@ -1,236 +1,232 @@
 .backdrop {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--background-backdrop);
-    z-index: 9;
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-backdrop);
+  z-index: 9;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 .backdrop.is-hidden.modal {
-    transform: translate(-50%, -50%) scale(0.9);
+  transform: translate(-50%, -50%) scale(0.9);
 }
 .modal {
-    width: 100%;
-    height: 100%;
-    max-width: 450px;
-    max-height: 609px;
-    overflow-y: scroll;
-    background-color: var(--secondary-color);
-    border: 1px solid var(--secondary-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  width: 100%;
+  height: 100%;
+  max-width: 450px;
+  max-height: 609px;
+  overflow-y: scroll;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      @media screen and (min-width: 768px){
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1); 
-      }
-      @media screen and (min-width: 1200px){
+   @media screen and (min-width: 1200px) {
     max-width: 528px;
     max-height: 581px;
-      }
+  }
 }
 .modal:hover,
 .modal:focus {
-    border-color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 .modal_button {
-    position: absolute;
-    top: 1.37%;
-    right: 1.51%;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: var(--secondary-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 1.37%;
+  right: 1.51%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--secondary-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal_button:hover,
 .modal_button:focus {
-    fill: var(--accent-color);
+  fill: var(--accent-color);
 }
 .form {
-    width: 100%;
-   
+  width: 100%;
 }
-.form_group{
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
-    width: 100%;
+.form_group {
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100%;
 }
 .form-checkbox {
-    position: relative;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-bottom: 30px;
-    height: 24px;
-    display: flex;
-    margin-top: 20px;
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 30px;
+  height: 24px;
+  display: flex;
+  margin-top: 20px;
 }
 .form_field {
-    position: relative;
-    margin-bottom: 28px;
+  position: relative;
+  margin-bottom: 28px;
 }
-.form_field-top{
-    margin-top: 30px;
+.form_field-top {
+  margin-top: 30px;
 }
 .form_field--margin {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .form_label {
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 1.167;
-    letter-spacing: 0.01em;
-    color: var(--primary-text-color);
-    padding-left: 42px;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+  padding-left: 42px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form_input {
-    height: 40px;
-    padding-left: 42px;
-    width: 100%;
-    border-radius: 4px;
-    border: 1px solid var(--border-input);
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 40px;
+  padding-left: 42px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--border-input);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form_input:focus {
-    border-color: var(--accent-color);
-    outline: none;
+  border-color: var(--accent-color);
+  outline: none;
 }
 .form_input:focus + .form_label,
 .form_input:not(:placeholder-shown) + .form_label {
-    transform: translate(-60%, -40px);
+  transform: translate(-60%, -40px);
 }
 .form_input:focus ~ .form_icon {
-    fill: var(--accent-color);
+  fill: var(--accent-color);
 }
 .form_icon {
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    display: inline-block;
-    transform: translateY(-50%);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  display: inline-block;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form_caption{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.5;
-    text-align: center;
-    margin-bottom: 12px;
-    color: var(--titel-text-color);
+.form_caption {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 12px;
+  color: var(--titel-text-color);
 }
 .form_input:focus + .form_label {
-    color: var(--primary-text-color);
+  color: var(--primary-text-color);
 }
 .textarea {
-    resize: none;
-    padding-right: 16px;
-    padding-left: 16px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    height: 120px;
-    outline: none;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.01em;
-    width: 100%;
-    border-radius: 4px;
-    border: 1px solid var(--border-input);
-    margin-top: 4px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  resize: none;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  height: 120px;
+  outline: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.01em;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--border-input);
+  margin-top: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .textarea:focus {
-    border-color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 .form-textarea_name {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 1.167;
-    letter-spacing: 0.01em;
-    color: var(--primary-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
 }
 .textarea::placeholder {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 1.67;
-    letter-spacing: 0.01em;
-    color: var(--color-placecholder);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.01em;
+  color: var(--color-placecholder);
 }
 .form-checkbox_input {
-    appearance: none;
+  appearance: none;
 }
 .form-checkbox_icon {
-    display: block;
-    width: 16px;
-    height: 15px;
-    border-radius: 2px;
-    border: 1px solid var(--titel-text-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: 1px solid var(--titel-text-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-checkbox_label{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 0;
+.form-checkbox_label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
 }
 .form-checkbox_input:focus + .form-checkbox_label .form-checkbox_icon {
-    background-color: var(--accent-color);
-    border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
-.form-checkbox_agreement-conditions{
-    text-decoration: underline;
-    color:var(--accent-color)
+.form-checkbox_agreement-conditions {
+  text-decoration: underline;
+  color: var(--accent-color);
 }
 .form-checkbox_text,
-.form-checkbox_agreement-conditions{
-@media screen and (min-width: 480px){
- font-size: 12px;
- line-height: 1.166;
- letter-spacing: 0.01em;
-}
-@media screen and (min-width: 1200px){
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-}
+.form-checkbox_agreement-conditions {
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.01em;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+  }
 }
 .sent-button {
-    display: block;
-    width: 200px;
-    height: 50px;
-    background-color: var(--accent-color);
-    color: var(--secondary-color);
-    margin: 0 auto;
-    
+  display: block;
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  margin: 0 auto;
 }

@@ -1,48 +1,43 @@
 .footer {
   background-color: #2f303a;
-  
 }
 .footer_container {
- text-align: center;
- padding-top: 60px;
- padding-bottom: 60px;
- 
- @media screen and (min-width: 768px){
-  display: flex;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-around;
-
-
- }
- @media screen and (min-width: 1200px){
-  display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
     align-items: baseline;
     justify-content: space-between;
     text-align: unset;
- }
+  }
 }
 .footer_logo-studio {
   color: var(--secondary-color);
 }
 .footer_contacts {
   margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
-  
-  
-  @media screen and (min-width: 1200px){
+  margin-right: auto;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
     margin-right: 70px;
     margin-left: 0;
     margin-bottom: 0;
   }
-  
 }
 .adress {
   margin-top: 20px;
   margin-bottom: 8px;
-  @media screen and (min-width: 1200px){
-    margin-bottom: 9px;  
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
   }
 }
 .footer_adress {
@@ -69,60 +64,60 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &.contacts-footer_link:hover,
   &.contacts-footer_link:focus,
-  &.contacts-footer_link:active{
+  &.contacts-footer_link:active {
     color: var(--accent-color);
-    }
+  }
 }
-.contacts-footer_item{
+.contacts-footer_item {
   margin-bottom: 8px;
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     margin-bottom: 9px;
   }
 }
-.footer-social-link{
+.footer-social-link {
   width: 206px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
 
-@media screen and (min-width: 1200px){
-  margin-right: auto;
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
     margin-left: 0;
     margin-bottom: 0;
-}
+  }
 }
 .footer_pre-subtitle,
-.subscribe_pre-subtitle{
+.subscribe_pre-subtitle {
   color: var(--secondary-color);
- margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-.social-icons_link--background{
+.social-icons_link--background {
   background-color: var(--background-footer-button);
 }
 .subscribe {
   margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
 
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     width: 570px;
     margin-left: 0;
     margin-right: 0;
   }
 }
-.subscribe_button{
+.subscribe_button {
   margin-top: 20px;
   width: 200px;
-  height: 50px; 
-  background-color: var(--accent-color); 
+  height: 50px;
+  background-color: var(--accent-color);
   color: var(--secondary-color);
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     margin-top: 0;
   }
 }
 .subscribe_form {
-  flex-direction:column;
+  flex-direction: column;
   width: 100%;
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row;
   }
@@ -130,33 +125,33 @@
 .subscribe_label {
   display: flex;
   flex-direction: column;
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     margin-right: 12px;
   }
 }
-.subscribe_input{
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 1.25;
-letter-spacing: 0.03em;
-color: var(--input-color);
-width: 100%;
-height: 50px;
-border: 1px solid var(--background-label);
-padding-top: 15px;
-padding-bottom: 15px;
-padding-left: 16px;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-background-color: var(--background-color-footer);
-border-radius: 4px;
-@media screen and (min-width: 768px){
-width: 450px;
-height: 50px;
-}
-@media screen and (min-width: 1200px){
-width: 358px;
-height: 50px;
-}
+.subscribe_input {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--input-color);
+  width: 100%;
+  height: 50px;
+  border: 1px solid var(--background-label);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: var(--background-color-footer);
+  border-radius: 4px;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    height: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    height: 50px;
+  }
 }
