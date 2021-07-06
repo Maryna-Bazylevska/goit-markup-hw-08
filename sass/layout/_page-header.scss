@@ -207,7 +207,7 @@
   top: 0;
   width: 100vw;
   height: 100vh;
-  
+ z-index: 5;
   .container {
   position: relative;
   padding-top: 40px;
@@ -260,6 +260,12 @@ display: flex;
 .mobile-nav.is-hidden {
 opacity: 0;
 pointer-events: none;
+
+}
+.mobile-media__item{
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid var(--border-input);
 }
 .mobile-menu__link-active,
 .mobile-contacts__link-tel,

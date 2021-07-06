@@ -1,4 +1,12 @@
-.mobile-nav.is-hidden {
-    opacity: 0;
-  pointer-events: none;
-}
+ @media screen and (min-width: 768px){
+        width: 450px;
+        height: 609px;
+      }
+      @media screen and (min-width: 768px){
+        height: 609px;
+        left: 159px;
+      }
+      @media screen and (min-width: 1200px){
+        width: 528px;
+        height: 581px;
+      }
