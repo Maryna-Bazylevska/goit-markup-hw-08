@@ -9,6 +9,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: -30px;
+ 
 }
 .clients_icon {
   fill: var(--color--social);
@@ -52,6 +53,6 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients_item--margin {
+.clients_item-margin-right {
   margin-right: 0;
 }
