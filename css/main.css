@@ -891,21 +891,24 @@ img {
   line-height: 1.187;
 }
 
+.clients {
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .clients_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 60px;
-  margin-right: -30px;
   margin-bottom: -30px;
-}
-
-@media screen and (min-width: 1200px) {
-  .clients_list {
-    padding-bottom: 94px;
-  }
 }
 
 .clients_icon {
@@ -1062,7 +1065,7 @@ img {
 }
 
 .contacts-footer_link {
-  font-family: Robovar(--main-font);
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
