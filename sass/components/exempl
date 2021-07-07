@@ -8,9 +8,7 @@
 .clients_list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   margin-bottom: -30px;
- 
 }
 .clients_icon {
   fill: var(--color--social);
@@ -47,19 +45,31 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto;
+  height: 92px;
   border-radius: 4px;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients_item-margin-right-tab {
-  @media screen  and (min-width: 768px) and (max-width: 1199px) {
+
+@media screen and (min-width: 480px) {
+  .clients_item-margin-right {
     margin-right: 0;
   }
 }
-.clients_item-margin-right{
-  @media screen and (max-width: 767px){
+@media screen and (min-width: 768px) {
+  .clients_item-margin-right {
     margin-right: 0;
   }
+}
+
+.clients_item-margin-right-tab {
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px){
+.clients_item-margin-right-disp{
+  margin-right: 0;
+}
 }
