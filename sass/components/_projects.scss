@@ -39,25 +39,35 @@
 }
 .card-overlay_text {
   position: absolute;
-  width: 370px;
+  width: 100%;
   height: 294px;
+  padding-top: 77px;
   background-color: var(--accent-color);
   color: var(--secondary-color);
-  padding-top: 63px;
-  padding-bottom: 63px;
-  padding-left: 24px;
+  padding-top: auto;
+  padding-bottom:auto;
   padding-right: 24px;
+  padding-left: 24px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.55;
+  letter-spacing: 0.03em;
   transform: translateY(0);
   transition: transform 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   .card:hover &,
   .card:focus & {
     transform: translateY(-100%);
+  }
+  @media screen and (min-width: 768px){
+    padding-top: 49px;
+    padding-bottom: 49px;
+  }
+  @media screen and (min-width: 768px){
+    padding-top: 63px;
+    padding-bottom: 63px;
   }
 }
 .projekts_pre-subtitle {
@@ -85,4 +95,5 @@
   position: relative;
   overflow: hidden;
   width: 100%;
+  
 }

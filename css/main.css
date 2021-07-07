@@ -1698,19 +1698,21 @@ img {
 
 .card-overlay_text {
   position: absolute;
-  width: 370px;
+  width: 100%;
   height: 294px;
+  padding-top: 77px;
   background-color: var(--accent-color);
   color: var(--secondary-color);
-  padding-top: 63px;
-  padding-bottom: 63px;
-  padding-left: 24px;
+  padding-top: auto;
+  padding-bottom: auto;
   padding-right: 24px;
+  padding-left: 24px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.55;
+  letter-spacing: 0.03em;
   -webkit-transform: translateY(0);
           transform: translateY(0);
   -webkit-transition: -webkit-transform 250ms;
@@ -1725,6 +1727,20 @@ img {
 .card:focus .card-overlay_text {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+}
+
+@media screen and (min-width: 768px) {
+  .card-overlay_text {
+    padding-top: 49px;
+    padding-bottom: 49px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-overlay_text {
+    padding-top: 63px;
+    padding-bottom: 63px;
+  }
 }
 
 .projekts_pre-subtitle {
